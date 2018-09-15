@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
   <script src="L.Control.Locate.min.js" charset="utf-8"></script>
-  <script src="assets/amenities_within_one_mile.geojson" charset="utf-8"></script>
+  <script src="assets/geocache.geojson" charset="utf-8"></script>
   <script src="assets/paper_maps.geojson" charset="utf-8"></script>
 
   <style>
@@ -109,30 +109,20 @@
 
 <body onload="init()">
   <div id="map">
-    <button id="info-button" onclick="myInfo()">Woodland Art Fair Info</button>
+    <button id="info-button" onclick="myInfo()">Instructions</button>
     <div id="footer">
       <div id="legend">
-        <h1>Amenities within one mile</h1>
+        <h1>UKy Geography Geocache</h1>
         <div class="legend-items">
           <a href="https://outrageGIS.com">
-            <img src="assets/ky_2.svg" alt="trail map booth" title="Visit our trail map booth! If you can't make then visit our web page.">
-          </a>Trail maps</div>
+            <img src="assets/ky_2.svg" alt="Geography Department" title="Visit our trail map booth! If you can't make then visit our web page.">
+          </a>Geography Department</div>
         <div class="legend-items">
-          <img src="assets/rainbow.svg" alt="Woodland Park art fair, August 18-29, 2018" title="Woodland Park art fair, August 18-29, 2018">Fair</div>
+          <img src="assets/rainbow.svg" alt="What you need to find" title="What you need to find">What you need to find</div>
         <div class="legend-items">
-          <img src="assets/garden.svg" alt="WBeer garded" title="Relax in the shade and nurse a brew">Beer garden</div>
+          <img src="assets/map_marker.svg" alt="Turn on your location" title="Turn on your location">Turn on your location</div>
         <div class="legend-items">
-          <img src="assets/coffee.svg" alt="Cafe" title="Wind up!">Coffee</div>
-        <div class="legend-items">
-          <img src="assets/bar_orig.svg" alt="Bourbon" title="Wind down!">Spirits</div>
-        <div class="legend-items">
-          <img src="assets/waterfountain.svg" alt="Water fountains in the city" title="Splash and bubbles!">Water Fountain</div>
-        <div class="legend-items">
-          <img src="assets/bike_parking.svg" alt="Park your bike" title="Find a place to park your bike.">Bike parking</div>
-        <div class="legend-items">
-          <img src="assets/sidewalks.svg" alt="Sidewalk" title="Walk today!">Sidewalk</div>
-        <div class="legend-items">
-          <img src="assets/pedpath.svg" alt="Pedestrian path" title="Off sidewalk pedestrian path">Ped path</div>
+          <img src="assets/location.svg" alt="Your location" title="Your location">Your location</div>
         <div id="credit"></div> 
       </div>
     </div>
@@ -151,7 +141,7 @@
         opacity: 1.0,
         tms: true,
         zoomSnap: 0.1,
-        attribution: "<a href='/'>outrageGIS mapping</a> | &copy; <a href='https://openstreetmap.org'>OSM Contributors</a>"
+        attribution: "<a href='https://uky-gis.github.io/'>UKy Geography</a> | &copy; <a href='https://openstreetmap.org'>OSM Contributors</a>"
       };
       L.tileLayer('{z}/{x}/{y}.png', options).addTo(map); // add the map!
 
