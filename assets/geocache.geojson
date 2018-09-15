@@ -10,8 +10,8 @@ var locations = {
 { "type": "Feature", "properties": { "amenity": "water", "name": "Chase", "pop_up": "#" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -84.494685, 38.044567] ] } }, 
 
 
-{ "type": "Feature", "properties": { "amenity": "rainbow", "name": "Old wise one knarled and looming", "pop_up": "#" }, "geometry": { "type": "MultiPoint", "coordinates": [ [-84.500427, 38.032274] ] } }, 
-{ "type": "Feature", "properties": { "amenity": "maps", "name": "outrageGIS mapping booth<br><span style='font-size:0.8em;'>Same spot for 13 years — <a href='https://outrageGIS.com'>visit</a></span>", "pop_up": "#" }, "geometry": { "type": "MultiPoint", "coordinates": [ [-84.504280, 38.038659] ] } }
+{ "type": "Feature", "properties": { "amenity": "rainbow", "name": "Old wise one, knobbly and gnarled", "pop_up": "#" }, "geometry": { "type": "MultiPoint", "coordinates": [ [-84.500427, 38.032274] ] } }, 
+{ "type": "Feature", "properties": { "amenity": "maps", "name": "UKy Department of Geography<br><span style='font-size:0.8em;'>75th Anniversary — <a href='https://uky-gis.github.io'>visit</a></span>", "pop_up": "#" }, "geometry": { "type": "MultiPoint", "coordinates": [ [-84.504280, 38.038659] ] } }
 
 ///
 ]
